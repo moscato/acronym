@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="images/fav.jpg"/>
+    <script src="bkgr.js"></script>
+    <title>Acronyms</title>
+    <style>
+        html {
+            background-image: url('images/union-station.jpg');
+            min-height: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .tops {
+            background-color: aliceblue;
+            width: autos;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3%;
+            font-size: 2rem;
+            padding: .1%;
+        }
+
+        .box {
+            background-color: aliceblue;
+            width: auto;
+            padding: 1% 1%;
+            margin-top: 5%;
+            padding-left: 1%;
+            overflow: hidden;
+        }
+
+        .instruct {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -.5%;
+        }
+
+        #inp {
+            font-size: 1.3rem;
+        }
+        #inp:active {
+            background-color: #ffffe0;
+        }
+
+        .sendBtn {
+            font-size: 1rem;
+        }
+        .sendBtn:hover {
+            background-color: #a9a9a9;
+        }
+        .sendBtn:active {
+            background-color: #5d5c5b;
+        }
+
+        .links {
+            margin-left: 2%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+  <div class="tops">
+      <p class="intro">Acronym Decoder</p>
+  </div>
+
+  <div class="box">
+    <p class="instruct">Enter an acronym for expansion.</p>
+    <input spellcheck="false" type="text" id="inp"/>
+      <br><br>
+    <button onclick="pressed()" class="sendBtn"><strong>GO →</strong></button>
+
+    <h1 class="here">...</h1>
+    
+    <div class="helpLink">
+        <a href="all.html" class="links">All</a>
+        <a href="help.html" class="links">Help?</a>
+    </div>
+
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
