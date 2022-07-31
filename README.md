@@ -9,7 +9,7 @@ I will not be updating this tool as often, so check there for most recent versio
 Also be aware of the PowerShell script, cause I think that is pretty nifty too.
 
 Images typically come from an images folder, they are un main directory here.
-Paths in bkrg.js have been changed to reflect this.
+Paths in bkgr.js have been changed to reflect this.
 Images are all from denvergov.org
 
 
