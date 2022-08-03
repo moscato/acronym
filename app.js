@@ -93,6 +93,8 @@
                 break;
             case 'CBMS' : here.textContent = 'Colorado Benefits Management System'
                 break;
+            case 'CC' : here.textContent = 'Creative Cloud'
+                break;
             case 'CCAP' : here.textContent = 'Child Care Assistance Program'
                 break;
             case 'CCIC' : here.textContent = 'Colorado Crime Information Center'
@@ -245,6 +247,8 @@
             case 'DVI' : here.textContent = 'Digital Visual Interface'
                 break;
 
+            case 'EAC' : here.textContent = 'Exchange Admin Center'
+                break;
             case 'EAM' : here.textContent = 'Enterprise Asset Management system'
                 break;
             case 'EAMS' : here.textContent = 'Enterprise Asset Management System'
@@ -285,6 +289,8 @@
                 break;
 
             case 'FAAD' : here.textContent = 'Family And Adult Development'
+                break;
+            case 'FAMLI' : here.textContent = 'Family And Medical Leave Insurance'
                 break;
             case 'FAQ' : here.textContent = 'Frequently Asked Questions'
                 break;
@@ -370,7 +376,7 @@
                 break;
             case 'HTTPS' : here.textContent = 'HyperText Transfer Protocol Secure'
                 break;
-            case 'HVAC' : here.textContent = 'Heating, Ventilation, and Air Conditioning'
+            case 'HVAC' : here.textContent = 'Heating Ventilation and Air Conditioning'
                 break;
             case 'HYPE' : here.textContent = 'Helping Youth Pursue Excellence'
                 break;
@@ -384,6 +390,8 @@
             case 'III' : here.textContent = 'Interstate Identification Index'
                 break;
             case 'IM' : here.textContent = 'Incident Management'
+                break;
+            case 'IMO' : here.textContent = 'In My Opinion'
                 break;
             case 'IMU' : here.textContent = 'Information Management Unit'
                 break;
@@ -468,6 +476,8 @@
             case 'MHS' : here.textContent = 'Mental Health Services'
                 break;
             case 'MHUW' : here.textContent = 'Mile High United Way'
+                break;
+            case 'MI' : here.textContent = 'Major Incident'
                 break;
             case 'MMC' : here.textContent = 'ManageMent Console'
                 break;
@@ -634,6 +644,8 @@
                 break;
             case 'RBAC' : here.textContent = 'Role Based Access Control'
                 break;
+            case 'REPL' : here.textContent = 'Read Evaluate Print Loop'
+                break;
             case 'RDBMS' : here.textContent = 'Relational DataBase Management System'
                 break;
             case 'RDSMS' : here.textContent = 'Relational Data Stream Management System'
@@ -676,6 +688,8 @@
             case 'SAS' : here.textContent = 'Statistical Analysis System'
                 break;
             case 'SATA' : here.textContent = 'Serial Advanced Technology Attachment'
+                break;
+            case 'SBA' : here.textContent = 'Small Business Administration'
                 break;
             case 'SCORE' : here.textContent = 'State COnfidential REporting / REviewing'
                 break;
@@ -720,6 +734,8 @@
             case 'SP' : here.textContent = 'Special Publication'
                 break;
             case 'SPSS' : here.textContent = 'Statistical Package for the Social Sciences'
+                break;
+            case 'SRAE' : here.textContent = 'Sustainability & Resiliency Architectural Engineering'
                 break;
             case 'SSD' : here.textContent = 'Solid State Drive'
                 break;
@@ -797,7 +813,7 @@
                 break;
             case 'USPS' : here.textContent = 'United State\'s Postal Service'
                 break;
-            case 'USS' : here.textContent = 'Unassigned Self-Service tickets'
+            case 'USS' : here.textContent = 'Unassigned Self-Service'
                 break;
             case 'USR' : here.textContent = 'USeR'
                 break;
