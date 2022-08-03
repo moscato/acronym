@@ -22,7 +22,6 @@ switch ($acr) {
     "API"  { "Application Programming Interface" }
     "APP"  { "APPlication" }
     "ASCII"{ "American Standard Code for Information Interchange" }
-    
     "ASP"  { "Application Service Provider" }
     "ATA"  { "Advanced Technology Attachment" }
     "ATIMS"{ "Activities Tracking Information Management System" }
@@ -34,6 +33,7 @@ switch ($acr) {
     "BIA"  { "Business Impact Analysis" }
     "BOSS" { "Back Office System Software" }
     "BMO"  { "Budget Management Office" }
+    "BMS"  { "Building Management System" }
     "BRB"  { "Be Right Back" }
     "BSOD" { "Blue Screen Of Death" }
 
@@ -43,6 +43,7 @@ switch ($acr) {
     "CART" { "Communication Access Realtime Translation" }
     "CASR" { "Climate Action, Sustainability & Resiliency" }
     "CBMS" { "Colorado Benefits Management System" }
+    "CC"   { "Creative Cloud" }
     "CCAP" { "Child Care Assistance Program" }
     "CCB"  { "City and County Building" }
     "CCD"  { "City and County of Denver" }
@@ -117,6 +118,7 @@ switch ($acr) {
     "DVD"  { "Digital Video Disc" }
     "DVI"  { "Digital Visual Interface" }
 
+    "EAC"  { "Exchange Admin Center" }
     "EAM"  { "Enterprise Asset Management System" }
     "EAMS" { "Enterprise Asset Management System" }
     "EAP"  { "Employee Assistance Program" }
@@ -138,6 +140,7 @@ switch ($acr) {
     "EZLAPP"{ "EZ Links APPlication" }
 
     "FAAD" { "Family And Adult Development" }
+    "FAMLI"{ "Family And Medical Leave Insurance" }
     "FAQ"  { "Frequently Asked Questions" }
     "FAST" { "Family Advocacy Support Team" }
     "FBI"  { "Federal Bureau of Investigations" }
@@ -231,6 +234,7 @@ switch ($acr) {
     "MFA"  { "Multiple Factor Authentication" }
     "MHFD" { "Mile High Flood District" }
     "MHS"  { "Mental Health Services" }
+    "MI"   { "Major Incident" }
     "MHUW" { "Mile High United Way" }
     "MMC"  { "ManageMent Console" }
     "MOA"  { "Memorandum of Agreement" }
@@ -330,6 +334,7 @@ switch ($acr) {
     "SAS" { "Statistical Analysis System" }
     "SAAS"{ "Software as a Service" }
     "SATA"{ "Serial Advanced Technology Attachment" }
+    "SBA" { "Small Business Administration" }
     "SCOT"{ "Safe City Office Tool" }
     "SCCM"{ "System Center Configuration Manager" }
     "SCP" { "Secure Copy Protocol" }
@@ -352,6 +357,7 @@ switch ($acr) {
     "SP"  { "Special Publication" }
     "SPSS"{ "Statistical Package for the Social Sciences" }
     "SQL" { "Structured Query Language" }
+    "SRAE"{ "Sustainability & Resiliency Architectural Engineering" }
     "SSD" { "Solid State Drive" }
     "SSH" { "Secure SHell" }
     "SSHD"{ "Solid State Hybrid Drive" }
