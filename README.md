@@ -13,4 +13,4 @@ Paths in bkgr.js have been changed to reflect this.
 Images are all from denvergov.org
 
 
-Acronym count at time of last upload is 385.
+Acronym count at time of last upload is 392.
