@@ -7,863 +7,626 @@
 
     document.addEventListener('keypress', (keyNum) => {
         if (keyNum.keyCode == 13) {
-            pressed();
+pressed();
         } else if (keyNum.key == 'Enter') {
-            pressed();
+pressed();
         }
     });
 
     function pressed() {
         let txtSplit = document.getElementById('inp').value.toUpperCase().split(/[.\s]/g); 
         let text = txtSplit.join('');
-        switch (text) {
-            case '' : here.textContent = '...'
-                break;
-    
-            case '2FA' : here.textContent = 'Two Factor Authentication'
-                break;
-
-            case 'AAD' : here.textContent = 'Azure Active Directory'
-                break;
-            case 'ACSES' : here.textContent = 'Automated Child Support Enforcement System'
-                break;
-            case 'AD' : here.textContent = 'Active Directory'
-                break;
-            case 'ADFS' : here.textContent = 'Active Directory File Service'
-                break;
-            case 'ADA' : here.textContent = 'Americans with Disabilities Act'
-                break;
-            case 'ADO' : here.textContent = 'Azure DevOps'
-                break;
-            case 'ADUC' : here.textContent = 'Active Directory Users and Computers'
-                break;
-            case 'AES' : here.textContent = 'Advanced Encryption Standard'
-                break;
-            case 'AFK' : here.textContent = 'Away From Keyboard'
-                break;
-            case 'AGOL' : here.textContent = 'ArcGis OnLine'
-                break;
-            case 'AM' : here.textContent = 'Asset Management'
-                break;
-            case 'AO' : here.textContent = 'Auditor\'s Office'
-                break;
-            case 'API' : here.textContent = 'Application Programming Interface'
-                break;
-            case 'APP' : here.textContent = 'APPlication'
-                break;
-            case 'ASCII' : here.textContent = 'American Standard Code for Information Interchange'
-                break;
-            case 'ASP' : here.textContent = 'Application Service Provider'
-                break;
-            case 'ATA' : here.textContent = 'Advanced Technology Attachment'
-                break;
-            case 'ATIMS' : here.textContent = 'Activities Tracking Information Management System'
-                break;
-
-            case 'BAS' : here.textContent = 'Building Automation System'
-                break;
-            case 'BBM' : here.textContent = 'Buffalo Bill Museum'
-                break;
-            case 'BCP' : here.textContent = 'Business Continuity Plan'
-                break;
-            case 'BIOS' : here.textContent = 'Basic Input Output System'
-                break;
-            case 'BIA' : here.textContent = 'Business Impact Analysis'
-                break;
-            case 'BMO' : here.textContent = 'Budget Management Office'
-                break;
-            case 'BOSS' : here.textContent = 'Back Office System Software'
-                break;
-            case 'BRB' : here.textContent = 'Be Right Back'
-                break;
-            case 'BSOD' : here.textContent = 'Blue Screen Of Death'
-                break;
-            case 'BTW' : here.textContent = 'By The Way'
-                break;
-
-            case 'CAB' : here.textContent = 'Change Advisory Board'
-                break;
-            case 'CAD' : here.textContent = 'Computer Aided Design'
-                break;
-            case 'CAO' : here.textContent = 'City Attorney\'s Office'
-                break;
-            case 'CART' : here.textContent = 'Communication Access Realtime Translation'
-                break;
-            case 'CASR' : here.textContent = 'Climate Action, Sustainability & Resiliency'
-                break;
-            case 'CBMS' : here.textContent = 'Colorado Benefits Management System'
-                break;
-            case 'CC' : here.textContent = 'Creative Cloud'
-                break;
-            case 'CCAP' : here.textContent = 'Child Care Assistance Program'
-                break;
-            case 'CCIC' : here.textContent = 'Colorado Crime Information Center'
-                break;
-            case 'CCB' : here.textContent = 'City and County Building'
-                break;
-            case 'CCD' : here.textContent = 'City and County of Denver'
-                break;
-            case 'CDHS' : here.textContent = 'Colorado Deprtment of Human Services'
-                break;
-            case 'CD' : here.textContent = 'Compact Disc'
-                break;
-            case 'CDL' : here.textContent = 'Commercial driver\'s License'
-                break;
-            case 'CI' : here.textContent = 'Configuration Item'
-                break;
-            case 'CIO' : here.textContent = 'Chief Information Officer'
-                break;
-            case 'CGIS' : here.textContent = 'Contracting Grants Invoice System'
-                break;
-            case 'CHM' : here.textContent = 'Community Health Management'
-                break;
-            case 'CHRI' : here.textContent = 'Criminal History Record Information'
-                break;
-            case 'CIT' : here.textContent = 'Computer Information Tool'
-                break;
-            case 'CJI' : here.textContent = 'Criminal Justice Information'
-                break;
-            case 'CJIS' : here.textContent = 'Criminal Justice Information Services'
-                break;
-            case 'CLI' : here.textContent = 'Crime Lab Interface'
-                break;
-            case 'CMU' : here.textContent = 'Commision Management unit'
-                break;
-            case 'CO' : here.textContent = 'COlorado'
-                break;
-            case 'COJL' : here.textContent = 'COunty JaiL'
-                break;
-            case 'COBRA' : here.textContent = 'Consolidated Omnibus Budget Reconciliation Act'
-                break;
-            case 'COO' : here.textContent = 'Chief Operating Officer'
-                break;
-            case 'COOP' : here.textContent = 'Continuity of Operations Plan'
-                break;
-            case 'CORA' : here.textContent = 'Colorado Open Records Act'
-                break;
-            case 'COVID' : here.textContent = 'COrona VIrus Disease'
-                break;
-            case 'CP' : here.textContent = 'Contingency Plan'
-                break;
-            case 'CPL' : here.textContent = 'Control PaneL'
-                break;
-            case 'CPR' : here.textContent = 'CardioPulmonary Resuscitation'
-                break;
-            case 'CPU' : here.textContent = 'Central Processing Unit'
-                break;
-            case 'CMDB' : here.textContent = 'Configuration management database'
-                break;
-            case 'CMOS' : here.textContent = 'Complementary metal oxide semiconductor'
-                break;
-            case 'CPHE' : here.textContent = 'Colorado Public Health Emergency'
-                break;
-            case 'CRT' : here.textContent = 'Civilian Report Technician | Case Review Tracking'
-                break;
-            case 'CS' : here.textContent = 'Career Service'
-                break;
-            case 'CSB' : here.textContent = 'Career Services Board'
-                break;
-            case 'CSS' : here.textContent = 'Child Support Services | Cascading Style Sheet'
-                break;
-            case 'CSV' : here.textContent = 'Comma Separated Value'
-                break;
-            case 'CTO' : here.textContent = 'Chief Technical Officer'
-                break;
-            case 'CV' : here.textContent = 'CommVault'
-                break;
-            case 'CW' : here.textContent = 'Child Welfare | Contingent Worker'
-                break;
-
-            case 'DAP' : here.textContent = 'Denver Animal Protection'
-                break;
-            case 'DB' : here.textContent = 'DataBase'
-                break;
-            case 'DBA' : here.textContent = 'DataBase Analyst'
-                break;
-            case 'DCC' : here.textContent = 'Denver County Court | Denver City Council'
-                break;
-            case 'DCO' : here.textContent = 'Data Center Operations'
-                break;
-            case 'DDC' : here.textContent = 'Denver Detention Center'
-                break;
-            case 'DDPHE' : here.textContent = 'Denver Department of Public Health & Environment'
-                break;
-            case 'DDR' : here.textContent = 'Double Data Rate'
-                break;
-            case 'DEB' : here.textContent = 'Denver Employee Bulletin'
-                break;
-            case 'DEDO' : here.textContent = 'Denver Economic Development & Opportunity'
-                break;
-            case 'DERP' : here.textContent = 'Denver Employee Retirement Plan'
-                break;
-            case 'DFD' : here.textContent = 'Denver Fire Department'
-                break;
-            case 'DHS' : here.textContent = 'Deprtment of Human Services'
-                break;
-            case 'DIA' : here.textContent = 'Denver International Airport'
-                break;
-            case 'DIMM' : here.textContent = 'Dual In-line Memory Module'
-                break;
-            case 'DIMS' : here.textContent = 'Digital Imaging Management System'
-                break;
-            case 'DL' : here.textContent = 'Distribution List'
-                break;
-            case 'DMV' : here.textContent = 'Department of Motor Vehicles'
-                break;
-            case 'DNS' : here.textContent = 'Domain Name System'
-                break;
-            case 'DNA' : here.textContent = 'DeoxyriboNucleic Acid'
-                break;
-            case 'DNVR' : here.textContent = 'DeNVeR'
-                break;
-            case 'DOA' : here.textContent = 'Dead On Arrival'
-                break;
-            case 'DOF' : here.textContent = 'Department Of Finance'
-                break;
-            case 'DOLE' : here.textContent = 'Department of Labor & Employment'
-                break;
-            case 'DOTI' : here.textContent = 'Department of Transportation and Infrastructure'
-                break;
-            case 'DPD' : here.textContent = 'Denver Police Department'
-                break;
-            case 'DPR' : here.textContent = 'Denver Parks & Recreation'
-                break;
-            case 'DP' : here.textContent = 'Display Port'
-                break;
-            case 'DPHE' : here.textContent = 'Department of Public Health & Environment'
-                break;
-            case 'DRMC' : here.textContent = 'Denver Revised Municipal Code'
-                break;
-            case 'DR' : here.textContent = 'Disaster Recovery'
-                break;
-            case 'DRP' : here.textContent = 'Disaster Recovery Plan'
-                break;
-            case 'DSD' : here.textContent = 'Denver Sheriff\'s Department'
-                break;
-            case 'DTU' : here.textContent = 'Data and Technology Unit'
-                break;
-            case 'DVD' : here.textContent = 'Digital Video Disc '
-                break;
-            case 'DVI' : here.textContent = 'Digital Visual Interface'
-                break;
-
-            case 'EAC' : here.textContent = 'Exchange Admin Center'
-                break;
-            case 'EAM' : here.textContent = 'Enterprise Asset Management system'
-                break;
-            case 'EAMS' : here.textContent = 'Enterprise Asset Management System'
-                break;
-            case 'EAP' : here.textContent = 'Employee Assistance Program'
-                break;
-            case 'ECS' : here.textContent = 'Enterprise Cashiering System | Elastic Cloud Storage'
-                break;
-            case 'EDI' : here.textContent = 'Equity Diversity and Inclusion'
-                break;
-            case 'EEB' : here.textContent = 'Electronics Engineering Bureau'
-                break;
-            case 'EEOE' : here.textContent = 'Equal Employment Opportunity Employer'
-                break;
-            case 'EID' : here.textContent = 'Employee IDentification'
-                break;
-            case 'EITS' : here.textContent = 'Early Identification & Intervention Strategy System'
-                break;
-            case 'EITSS' : here.textContent = 'Early Identification & Intervention Strategy System'
-                break;
-            case 'ELT' : here.textContent = 'Executive Leadership Team'
-                break;
-            case 'EMS' : here.textContent = 'Electronic Monitoring System | Environmental Management System'
-                break;
-            case 'EMT' : here.textContent = 'Emergency Medical Technician'
-                break;
-            case 'EOC' : here.textContent = 'Emergency Operations Center'
-                break;
-            case 'EOD' : here.textContent = 'End Of Day'
-                break;
-            case 'EPO' : here.textContent = 'Exclusive Provider Organization'
-                break;
-            case 'ETIMS' : here.textContent = 'Electronic Ticket Information Management System'
-                break;
-            case 'EXL' : here.textContent = 'EXcise and Licensing'
-                break;
-            case 'EZLAPP' : here.textContent = 'EZ Links APPlication'
-                break;
-
-            case 'FAAD' : here.textContent = 'Family And Adult Development'
-                break;
-            case 'FAMLI' : here.textContent = 'Family And Medical Leave Insurance'
-                break;
-            case 'FAQ' : here.textContent = 'Frequently Asked Questions'
-                break;
-            case 'FAST' : here.textContent = 'Family Advocacy Support Team'
-                break;
-            case 'FBI' : here.textContent = 'Federal Bureau of Investigations'
-                break;
-            case 'FCA' : here.textContent = 'Family Care Act'
-                break;
-            case 'FCD' : here.textContent = 'Federal Continuity Directive'
-                break;
-            case 'FIPPS' : here.textContent = 'Fair Information Practice Principles'
-                break;
-            case 'FIPS' : here.textContent = 'Federal Information Processing Standards'
-                break;
-            case 'FLR' : here.textContent = 'First Level Response'
-                break;
-            case 'FMLA' : here.textContent = 'Family and Medical Leave Act'
-                break;
-            case 'FPGA' : here.textContent = 'Field-Programmable Gate Array'
-                break;
-            case 'FSH' : here.textContent = 'File SHare'
-                break;
-            case 'FTE' : here.textContent = 'Full Time Employee'
-                break;
-            case 'FTP' : here.textContent = 'File Transfer Protocol'
-                break;
-
-            case 'GAL' : here.textContent = 'Global Address List'
-                break;
-            case 'GARE' : here.textContent = 'Government Alliance on Race and Equity'
-                break;
-            case 'GB' : here.textContent = 'GigaByte'
-                break;
-            case 'GC' : here.textContent = 'Global Catalog'
-                break;
-            case 'GIF' : here.textContent = 'Graphics Interchange Format'
-                break;
-            case 'GIS' : here.textContent = 'Geographic Information System'
-                break;
-            case 'GOV' : here.textContent = 'Government'
-                break;
-            case 'GP' : here.textContent = 'Group Policy'
-                break;
-            case 'GPO' : here.textContent = 'Group Policy Object'
-                break;
-            case 'GPS' : here.textContent = 'Global Positioning System'
-                break;
-            case 'GRITS' : here.textContent = 'Governance Review In Technology Services'
-                break;
-            case 'GRP' : here.textContent = 'GRouP'
-                break;
-            case 'GUI' : here.textContent = 'Graphical User Interface'
-                break;
-
-            case 'HA' : here.textContent = 'High Availability'
-                break;
-            case 'HALO' : here.textContent = 'High Activity Location Observation'
-                break;
-            case 'HDD' : here.textContent = 'Hard Disk Drive'
-                break;
-            case 'HDHP' : here.textContent = 'High-Deductible Health Plan'
-                break;
-            case 'HDMI' : here.textContent = 'High-Definition Multimedia Interface'
-                break;
-            case 'HEIC' : here.textContent = 'High EffIciency video Coding'
-                break;
-            case 'HIPAA' : here.textContent = 'Health Insurance Portability and Accountability Act'
-                break;
-            case 'HMO' : here.textContent = 'Health Maintenance Organization'
-                break;
-            case 'HOST' : here.textContent = 'HOusing STability'
-                break;
-            case 'HR' : here.textContent = 'Human Resources'
-                break;
-            case 'HRCP' : here.textContent = 'Human Rights Community Partnership'
-                break;
-            case 'HSA' : here.textContent = 'Health Savings Account'
-                break;
-            case 'HTML' : here.textContent = 'HyperText Markup Language'
-                break;
-            case 'HTTP' : here.textContent = 'HyperText Transfer Protocol'
-                break;
-            case 'HTTPS' : here.textContent = 'HyperText Transfer Protocol Secure'
-                break;
-            case 'HVAC' : here.textContent = 'Heating Ventilation and Air Conditioning'
-                break;
-            case 'HYPE' : here.textContent = 'Helping Youth Pursue Excellence'
-                break;
-
-            case 'IDE' : here.textContent = 'Integrated Development Environment'
-                break;
-            case 'IDM' : here.textContent = 'IDentity Management'
-                break;
-            case 'IGC' : here.textContent = 'Information Governance Committee'
-                break;
-            case 'III' : here.textContent = 'Interstate Identification Index'
-                break;
-            case 'IM' : here.textContent = 'Incident Management'
-                break;
-            case 'IMO' : here.textContent = 'In My Opinion'
-                break;
-            case 'IMU' : here.textContent = 'Information Management Unit'
-                break;
-            case 'INC' : here.textContent = 'INCident'
-                break;
-            case 'INF' : here.textContent = 'INFrastructure'
-                break;
-            case 'IOT' : here.textContent = 'Internet Of Things'
-                break;
-            case 'IP' : here.textContent = 'Internet Protocol'
-                break;
-            case 'IPAM' : here.textContent = 'IP Address Management'
-                break;
-            case 'IS' : here.textContent = 'Information System'
-                break;
-            case 'ISA' : here.textContent = 'Interconnection Security Agreement'
-                break;
-            case 'ISO' : here.textContent = 'Information Security Officer'
-                break;
-            case 'ISP' : here.textContent = 'Internet Service Provider'
-                break;
-            case 'ISCP' : here.textContent = 'Information Systems Contingency Plan'
-                break;
-            case 'ISE' : here.textContent = 'Integrated Scripting Environment'
-                break;
-            case 'IT' : here.textContent = 'Information Technology'
-                break;
-            case 'ITAM' : here.textContent = 'Information Technology Asset Management'
-                break;
-            case 'ITSM' : here.textContent = 'Information Technology Service Management'
-                break;
-            case 'ITIL' : here.textContent = 'Information Technology Infrastructure Library'
-                break;
-
-            case 'JS' : here.textContent = 'JavaScript'
-                break;
-            case 'JMS' : here.textContent = 'Jail Management System'
-                break;
-            case 'JPG' : here.textContent = 'Joint Photographic Experts Group'
-                break;
-            case 'JPEG' : here.textContent = 'Joint Photographic Experts Group'
-                break;
-
-            case 'KB' : here.textContent = 'Knowledge Base | KiloByte'
-                break;
-
-            case 'LAN' : here.textContent = 'Local Area Network'
-                break;
-            case 'LAPS' : here.textContent = 'Local Administrator Password Solution'
-                break;
-            case 'LASO' : here.textContent = 'Local Agency Security Officer'
-                break;
-            case 'LEAP' : here.textContent = 'Low-income Energy Assistance Program'
-                break;
-            case 'LEEP' : here.textContent = 'Law Enforcement Enterprise Portal'
-                break;
-            case 'LFC' : here.textContent = 'Lindsey-Flanigan Courthouse'
-                break;
-            case 'LED' : here.textContent = 'Light-Emitting Diode'
-                break;
-            case 'LOL' : here.textContent = 'Laugh Out Loud'
-                break;
-
-            case 'MAO' : here.textContent = 'Maximum Allowable Outage'
-                break;
-            case 'MAC' : here.textContent = 'Media Access Control'
-                break;
-            case 'MB' : here.textContent = 'MegaByte | MotherBoard'
-                break;
-            case 'MBPS' : here.textContent = 'Megabits per Second'
-                break;
-            case 'MCT' : here.textContent = 'Mobile Computer Terminal'
-                break;
-            case 'MDT' : here.textContent = 'Mobile Data Terminal'
-                break;
-            case 'MEF' : here.textContent = 'Mission Essential Function'
-                break;
-            case 'MFA' : here.textContent = 'Multiple Factor Authentication'
-                break;
-            case 'MHFD' : here.textContent = 'Mile High Flood District'
-                break;
-            case 'MHS' : here.textContent = 'Mental Health Services'
-                break;
-            case 'MHUW' : here.textContent = 'Mile High United Way'
-                break;
-            case 'MI' : here.textContent = 'Major Incident'
-                break;
-            case 'MMC' : here.textContent = 'ManageMent Console'
-                break;
-            case 'MO' : here.textContent = 'Mayor\'s Office'
-                break;
-            case 'MOA' : here.textContent = 'Memorandum of Agreement'
-                break;
-            case 'MOU' : here.textContent = 'Memorandum of Understanding'
-                break;
-            case 'MRE' : here.textContent = 'Mobile Report Entry'
-                break;
-            case 'MTD' : here.textContent = 'Maximum Tolerable Downtime'
-                break;
-            case 'MS' : here.textContent = 'Microsoft'
-                break;
-            case 'MSA' : here.textContent = 'My Secure Advantage'
-                break;
-            case 'MSI' : here.textContent = 'MicroSoft Installer'
-                break;
-
-            case 'NAM' : here.textContent = 'Network Analysis Module'
-                break;
-            case 'NAS' : here.textContent = 'Network Attached Storage'
-                break;
-            case 'NCIC' : here.textContent = 'National Crime Information Center'
-                break;
-            case 'NEFC' : here.textContent = 'New Employee First Call'
-                break;
-            case 'NIC' : here.textContent = 'Network Interface Card'
-                break;
-            case 'NIST' : here.textContent = 'National Institute of Standards and Technology'
-                break;
-            case 'NMC' : here.textContent = 'Nasuni Management Console'
-                break;
-            case 'NP' : here.textContent = 'No Problem'
-                break;
-            case 'NPS' : here.textContent = 'Net Promoter Score'
-                break;
-            case 'NSP' : here.textContent = 'Network Service Provider'
-                break;
-            case 'NTFS' : here.textContent = 'New Technology File System'
-                break;
-            case 'NVME' : here.textContent = 'NonVolatile Memory Express'
-                break;
-
-            case 'OBHS' : here.textContent = 'Office of Behavioral Health'
-                break;
-            case 'OCA' : here.textContent = 'Office of Childrens Affairs'
-                break;
-            case 'OD' : here.textContent = 'OneDrive'
-                break;
-            case 'OEM' : here.textContent = 'Original Equipment Manufacturer'
-                break;
-            case 'OEP' : here.textContent = 'Occupant Emergency Plan'
-                break;
-            case 'OHR' : here.textContent = 'Office of Human Resources'
-                break;
-            case 'OIM' : here.textContent = 'Office of Independent Monitor'
-                break;
-            case 'OIT' : here.textContent = 'Office of Information Technology'
-                break;
-            case 'OLA' : here.textContent = 'Operational Level Agreement'
-                break;
-            case 'OLED' : here.textContent = 'Organic Light-Emitting Diode'
-                break;
-            case 'OME' : here.textContent = 'Office of the Medical Examiner'
-                break;
-            case 'OOBE' : here.textContent = 'Out Of Box Experience'
-                break;
-            case 'OOO' : here.textContent = 'Out of Office'
-                break;
-            case 'OP' : here.textContent = 'Over Powered'
-                break;
-            case 'OPC' : here.textContent = 'Overflow Processing Center'
-                break;
-            case 'ORI' : here.textContent = 'Originating Agency Identifier'
-                break;
-            case 'OS' : here.textContent = 'Operating System'
-                break;
-            case 'OSEI' : here.textContent = 'Office of Social Equity and Innovation'
-                break;
-            case 'OSI' : here.textContent = 'Open Systems Interconnection model'
-                break;
-            case 'OSN' : here.textContent = 'Officer Serial Number'
-                break;
-            case 'OU' : here.textContent = 'Organizational Unit'
-                break;
-            case 'OWA' : here.textContent = 'Outlook Web Access'
-                break;
-
-            case 'PACE' : here.textContent = 'Prosecution And Code Enforcement'
-                break;
-            case 'PAB' : here.textContent = 'Police Administration Building'
-                break;
-            case 'PCB' : here.textContent = 'Printed Circuit Board'
-                break;
-            case 'PCI' : here.textContent = 'Peripheral Component Interconnect'
-                break;
-            case 'PCI-DSS' : here.textContent = 'Payment Card Industry Data Security Standard'
-                break;
-            case 'PCIDSS' : here.textContent = 'Payment Card Industry Data Security Standard'
-                break;  
-            case 'PCIE' : here.textContent = 'Peripheral Component Interconnect Express'
-                break;        
-            case 'PDA' : here.textContent = 'Problematic Data Action'
-                break;        
-            case 'PDF' : here.textContent = 'Portable Document Format'
-                break;        
-            case 'PERMS' : here.textContent = 'PERMitionS'
-                break;
-            case 'PHP' : here.textContent = 'Personal Home Page'
-                break;
-            case 'PIA' : here.textContent = 'Privacy Impact Assessments'
-                break;
-            case 'PIAD' : here.textContent = 'Performance Improvement and Accountability Division'
-                break;
-            case 'PII' : here.textContent = 'Personally Identifiable Information'
-                break;
-            case 'PIP' : here.textContent = 'Package Installer for Python'
-                break;
-            case 'PKI' : here.textContent = 'Public Key Infrastructure'
-                break;
-            case 'PL' : here.textContent = 'Procedural Language'
-                break;
-            case 'PMEF' : here.textContent = 'Primary Mission Essential Function'
-                break;
-            case 'PMO' : here.textContent = 'Project Management Office'
-                break;
-            case 'PNG' : here.textContent = 'Portable Network Graphics'
-                break;
-            case 'PO' : here.textContent = 'Probation Officer'
-                break;
-            case 'POC' : here.textContent = 'Point of Contact'
-                break;
-            case 'POS' : here.textContent = 'Point of Sale'
-                break;
-            case 'PPO' : here.textContent = 'Preferred Provider Organization'
-                break;
-            case 'PREM' : here.textContent = 'PREMises'
-                break;
-            case 'PSU' : here.textContent = 'Power Supply Unit'
-                break;
-            case 'PTO' : here.textContent = 'Paid Time Off'
-                break;
-            case 'PST' : here.textContent = 'Personal folder file extension (.PST)'
-                break;
-            case 'PS' : here.textContent = 'PowerShell'
-                break;
-            case 'PTS' : here.textContent = 'Pretrial Tracking System'
-                break;
-            case 'PVP' : here.textContent = 'Player Vs Player'
-                break;
-            case 'PW' : here.textContent = 'PassWord'
-                break;
-            case 'PWI' : here.textContent = 'Person With Information'
-                break;
-
-            case 'Q&A' : here.textContent = 'Question And Answer'
-            break;
-
-            case 'RAID' : here.textContent = 'Redundant Array of Independent (or Inexpensive) Disks'
-                break;
-            case 'RAM' : here.textContent = 'Random Access Memory'
-                break;
-            case 'RBAC' : here.textContent = 'Role Based Access Control'
-                break;
-            case 'REPL' : here.textContent = 'Read Evaluate Print Loop'
-                break;
-            case 'RDBMS' : here.textContent = 'Relational DataBase Management System'
-                break;
-            case 'RDSMS' : here.textContent = 'Relational Data Stream Management System'
-                break;
-            case 'RDC' : here.textContent = 'Remote Desktop Connection'
-                break;
-            case 'RDP' : here.textContent = 'Remote Desktop Protocol'
-                break;
-            case 'REPS' : here.textContent = 'Representative Payee System'
-                break;
-            case 'RITM' : here.textContent = 'Request Item'
-                break;
-            case 'RJ' : here.textContent = 'Registered Jack'
-                break;
-            case 'RLA' : here.textContent = 'Risk Limiting Audit'
-                break;
-            case 'RMS' : here.textContent = 'Records Management System'
-                break;
-            case 'RMF' : here.textContent = 'Risk Management Framework'
-                break;
-            case 'ROFL' : here.textContent = 'Rolling On the Floor Laughing'
-                break;
-            case 'RPO' : here.textContent = 'Recovery Point Objective'
-                break;
-            case 'RPP' : here.textContent = 'Residential Parking Permit'
-                break;
-            case 'RSJ' : here.textContent = 'Race and Social Justice'
-                break;
-            case 'RTD' : here.textContent = 'Regional Transportation District'
-                break;
-            case 'RTO' : here.textContent = 'Recovery Time Objective'
-                break;
-
-            case 'SAN' : here.textContent = 'Storage Area Network'
-                break;
-            case 'SARA' : here.textContent = 'Support And Recovery Assistant'
-                break;
-            case 'SAAS' : here.textContent = 'Software as a Service'
-                break;
-            case 'SAS' : here.textContent = 'Statistical Analysis System'
-                break;
-            case 'SATA' : here.textContent = 'Serial Advanced Technology Attachment'
-                break;
-            case 'SBA' : here.textContent = 'Small Business Administration'
-                break;
-            case 'SCORE' : here.textContent = 'State COnfidential REporting / REviewing'
-                break;
-            case 'SCOT' : here.textContent = 'Safe City Office Tool'
-                break;
-            case 'SCCM' : here.textContent = 'System Center Configuration Manager'
-                break;
-            case 'SCP' : here.textContent = 'Secure Copy Protocol'
-                break;
-            case 'SD' : here.textContent = 'Service Desk'
-                break;
-            case 'SDE' : here.textContent = 'Spatial Database Engine'
-                break;
-            case 'SDLC' : here.textContent = 'System Development Life Cycle'
-                break;
-            case 'SDDS' : here.textContent = 'Secure Document Delivery System'
-                break;
-            case 'SET' : here.textContent = 'Street Enforcement Team'
-                break;
-            case 'SFTY' : here.textContent = 'SaFTeY'
-                break;
-            case 'SID' : here.textContent = 'Security IDentification'
-                break;
-            case 'SLA' : here.textContent = 'Service-Level Agreement'
-                break;
-            case 'SME' : here.textContent = 'Subject Matter Expert'
-                break;
-            case 'SMH' : here.textContent = 'Shaking My Head'
-                break;
-            case 'SMTP' : here.textContent = 'Simple Mail Transfer Protocol'
-                break;
-            case 'SMS' : here.textContent = 'Short Message Service'
-                break;
-            case 'SNAP' : here.textContent = 'Supplemental Nutrition Assistance Program'
-                break;
-            case 'SNOW' : here.textContent = 'Service NOW'
-                break;
-            case 'SNR' : here.textContent = 'Single Number Reach'
-                break;
-            case 'SODIMM' : here.textContent = 'Small Outline Dual In-line Memory Module'
-                break;
-            case 'SP' : here.textContent = 'Special Publication'
-                break;
-            case 'SPSS' : here.textContent = 'Statistical Package for the Social Sciences'
-                break;
-            case 'SRAE' : here.textContent = 'Sustainability & Resiliency Architectural Engineering'
-                break;
-            case 'SSD' : here.textContent = 'Solid State Drive'
-                break;
-            case 'SSH' : here.textContent = 'Secure SHell'
-                break;
-            case 'SSHD' : here.textContent = 'Solid State Hybrid Drive'
-                break;
-            case 'SSN' : here.textContent = 'Social Security Number'
-                break;
-            case 'SSO' : here.textContent = 'Single Sign-On'
-                break;
-            case 'SSPR' : here.textContent = 'Self Server Password Reset'
-                break;
-            case 'SSRS' : here.textContent = 'SQL Server Reporting Services'
-                break;
-            case 'ST&E' : here.textContent = 'Security Test and Evaluation'
-                break;
-            case 'STARS' : here.textContent = 'Service to Customers, Teamwork, Accountability, Respect for Self & Others, Safety'
-                break;
-            case 'SQL' : here.textContent = 'Structured Query Language'
-                break;
-            case 'SVR' : here.textContent = 'SerVeR'
-                break;
-            case 'SWM' : here.textContent = 'Solid Waste Management'
-                break;
-            case 'SYS' : here.textContent = 'SYStem'
-                break;
-
-            case 'TAC' : here.textContent = 'Time and Attendance Change'
-                break;
-            case 'TANF' : here.textContent = 'Temporary Assistance for Needy Families'
-                break;
-            case 'TB' : here.textContent = 'TeraByte'
-                break;
-            case 'TBH' : here.textContent = 'To Be Honest'
-                break;
-            case 'TCM' : here.textContent = 'TylerCM'
-                break;
-            case 'TCP' : here.textContent = 'Transmission Control Protocol'
-                break;
-            case 'TIA' : here.textContent = 'TTelecommunications Industry Alliance'
-                break;
-            case 'TLDR' : here.textContent = 'Too Long Didn\'t Read'
-                break;
-            case 'TOTP' : here.textContent = 'Time-based One-Time Password'
-                break;
-            case 'TPM' : here.textContent = 'Trusted Platform Module'
-                break;
-            case 'TS' : here.textContent = 'Technology Services'
-                break;
-            case 'TT&E' : here.textContent = 'Test, Training, and Exercise'
-                break;
-            case 'TTE' : here.textContent = 'Test, Training, and Exercise'
-                break;
-            case 'TUI' : here.textContent = 'Text User Interface'
-                break;
-            case 'TTYL' : here.textContent = 'Talk To You Later'
-                break;
-
-            case 'UASI' : here.textContent = 'Urban Area Security Initiative'
-                break
-            case 'UDP' : here.textContent = 'User Datagram Protocol'
-                break
-            case 'UI' : here.textContent = 'User Interface'
-                break
-            case 'UKG' : here.textContent = 'Ultimate Kronos Group'
-                break
-            case 'UPS' : here.textContent = 'Uninterruptible Power Supply'
-                break;
-            case 'URL' : here.textContent = 'Uniform resource locator'
-                break;
-            case 'USB' : here.textContent = 'Universal Serial Bus'
-                break;
-            case 'UEFI' : here.textContent = 'Unified Extensible Firmware Interface'
-                break;
-            case 'USPS' : here.textContent = 'United State\'s Postal Service'
-                break;
-            case 'USS' : here.textContent = 'Unassigned Self-Service'
-                break;
-            case 'USR' : here.textContent = 'USeR'
-                break;
-
-            case 'VAU' : here.textContent = 'Victim Assistance Unit'
-                break;
-            case 'VGA' : here.textContent = 'Video Graphics Array'
-                break;
-            case 'VLAN' : here.textContent = 'Virtual Local Area Network'
-                break;
-            case 'VLC' : here.textContent = 'Video LAN Client'
-                break;
-            case 'VM' : here.textContent = 'Virtual Machine'
-                break;
-            case 'VMS' : here.textContent = 'Video Management Software'
-                break;
-            case 'VOIP' : here.textContent = 'Voice Over IP'
-                break;
-            case 'VPN' : here.textContent = 'Virtual Private Network'
-                break;
-            case 'VP' : here.textContent = 'Vice President'
-                break;
-            case 'VRM' : here.textContent = 'Voltage Regulator Module'
-                break;
-            case 'VTL' : here.textContent = 'Virtual Tape Library'
-                break;
-
-            case 'W3C' : here.textContent = 'World Wide Web Consortium'
-                break;
-            case 'WAN' : here.textContent = 'Wide Area Network'
-                break;
-            case 'WC' : here.textContent = 'Water Conservancy'
-                break;
-            case 'WCGW' : here.textContent = 'What Could Go Wrong?'
-                break;
-            case 'WD' : here.textContent = 'WorkDay'
-                break;
-            case 'WFH' : here.textContent = 'Work From Home'
-                break;
-            case 'WIFI' : here.textContent = 'Wireless Fidelity'
-                break;
-            case 'WISER' : here.textContent = 'Wireless Information System for Emergency Responders'
-                break;
-            case 'WMS' : here.textContent = 'Work Management System'
-                break;
-            case 'WW' : here.textContent = 'Waste Water'
-                break;
-            case 'WWW' : here.textContent = 'World Wide Web'
-                break;
-
-            default : here.textContent = 'Not in database... Let me know about it!'
+        const acr_obj = {
+            '' : '...',
+            '2FA' : 'Two Factor Authentication',
+            '10G' : '10 Galapago Street',
+            'A&V' : 'Arts & Venues',
+            'AA' : 'Accela Automation',
+            'AAD' : 'Azure Active Directory',
+            'AB' : 'Analytics Bureau',
+            'ACH' : 'Automated Clearing House',
+            'ACP' : 'Accela Civic Platform',
+            'ACSES' : 'Automated Child Support Enforcement System',
+            'AD' : 'Active Directory',
+            'ADA' : 'Americans with Disabilities Act',
+            'ADFS' : 'Active Directory File Service',
+            'ADO' : 'Azure DevOps',
+            'ADUC' : 'Active Directory Users and Computers',
+            'AEM' : 'Adobe Experience Manager',
+            'AES' : 'Audio Engineers Society | Advanced Encryption Standard',
+            'AGOL' : 'ArcGis OnLine',
+            'AO' : 'Auditor\'s Office',
+            'AP' : 'Accounts Payable',
+            'API' : 'Application Programming Interface',
+            'APP' : 'APPlication',
+            'ASCII' : 'American Standard Code for Information Interchange',
+            'ARP' : 'Address Resolution Protocol',
+            'ASI' : 'Application Specific Information',
+            'ASP' : 'Application Service Provider',
+            'ATA' : 'Advanced Technology Attachment',
+            'ATIMS' : 'Activities Tracking Information Management System',
+            'AUA' : 'Acceptable Use Agreement',
+            'AV' : 'Audio Visual | Arts & Venues',
+            'BAS' : 'Building Automation System',
+            'BBM' : 'Buffalo Bill Museum',
+            'BCP' : 'Business Continuity Plan',
+            'BI' : 'Business Intelligence',
+            'BIA' : 'Business Impact Analysis',
+            'BIAS' : 'Business Intelligent Application Solutions',
+            'BIOS' : 'Basic Input Output System',
+            'BMO' : 'Budget Management Office',
+            'BLDG' : 'BuiLDinG',
+            'BOE' : 'Board of Ethics',
+            'BOSS' : 'Back Office System Software',
+            'BPP' : 'Business Personal Property',
+            'BRB' : 'Be Right Back',
+            'BRM' : 'Business Relationship Management',
+            'BSOD' : 'Blue Screen Of Death',
+            'BTW' : 'By The Way',
+            'C&R' : 'Clerk and Recorder',
+            'CAB' : 'Change Advisory Board',
+            'CAD' : 'Computer Aided Design',
+            'CAMA' : 'Computer Assisted Mass Appraisal',
+            'CAO' : 'City Attorney\'s Office',
+            'CART' : 'Communication Access Realtime Translation',
+            'CASR' : 'Climate Action, Sustainability & Resiliency',
+            'CBMS' : 'Colorado Benefits Management System',
+            'CC' : 'Creative Cloud',
+            'CCAP' : 'Child Care Assistance Program',
+            'CCB' : 'City and County Building',
+            'CCD' : 'City and County of Denver',
+            'CCIC' : 'Colorado Crime Information Center',
+            'CCTC' : 'County Courts Teleconferencing',
+            'CD' : 'Compact Disc',
+            'CDHS' : 'Colorado Deprtment of Human Services',
+            'CDL' : 'Commercial driver\'s License',
+            'CDOT' : 'Colorado Dept Of Transportation',
+            'CDP' : 'Community Development & Planning',
+            'CGIS' : 'Contracting Grants Invoice System',
+            'CHM' : 'Community Health Management',
+            'CHRI' : 'Criminal History Record Information',
+            'CI' : 'Configuration Item',
+            'CIO' : 'Chief Information Officer',
+            'CIP' : 'Capital Improvement Program',
+            'CIT' : 'Computer Information Tool',
+            'CJI' : 'Criminal Justice Information',
+            'CJIS' : 'Criminal Justice Information Services',
+            'CL' : 'Contractor Licensing',
+            'CLI' : 'Crime Lab Interface',
+            'CMDB' : 'Configuration Management Database',
+            'CMOS' : 'Complementary metal oxide semiconductor',
+            'CMU' : 'Commision Management unit',
+            'CO' : 'Change Order',
+            'COBRA' : 'Consolidated Omnibus Budget Reconciliation Act',
+            'COCT' : 'County Court',
+            'COG' : 'Continuity of Government',
+            'COJL' : 'COunty JaiL',
+            'CON' : 'Contract',
+            'COO' : 'Chief Operating Officer',
+            'COOP' : 'Continuity of Operations Plan',
+            'CORA' : 'Colorado Open Records Act',
+            'CORE' : 'CAMA OASIS Replacement Endeavour',
+            'CORRA' : 'Colorado Open Records Request Act',
+            'COTS' : 'Customer Off The shelf',
+            'COVID' : 'COrona VIrus Disease',
+            'CP' : 'Contingency Plan',
+            'CPC' : 'Central Platte Campus',
+            'CPD' : 'Community Planning and Development',
+            'CPHE' : 'Colorado Public Health Emergency',
+            'CPL' : 'Control PaneL',
+            'CPR' : 'CardioPulmonary Resuscitation',
+            'CPU' : 'Central Processing Unit',
+            'CR' : 'Clerk and Recorder',
+            'CRM' : 'Customer Relationship Management',
+            'CRP' : 'Community Reentry Project',
+            'CRT' : 'Civilian Report Technician | Review Tracking',
+            'CS' : 'Career Service',
+            'CSB' : 'Career Services Board',
+            'CSC' : 'Civil Service Commission',
+            'CSS' : 'Child Support Services | Cascading Style Sheet',
+            'CSV' : 'Comma Separated Value',
+            'CTO' : 'Chief Technical Officer',
+            'CUA' : 'Computer User Agreement',
+            'CV' : 'CommVault',
+            'CW' : 'Child Welfare | Contingent Worker',
+            'DA' : 'District Attorney',
+            'DAM' : 'Denver Art Museum',
+            'DAP' : 'Denver Animal Protection',
+            'DAS' : 'Denver Animal Shelter',
+            'DB' : 'DataBase',
+            'DBA' : 'DataBase Analyst',
+            'DC' : 'Domain controller',
+            'DCC' : 'Denver County Court | Denver City Council',
+            'DCH' : 'Denver Children\'s Home',
+            'DCO' : 'Data Center Operations',
+            'DDC' : 'Denver Detention Center',
+            'DDOS' : 'Distributed Denial of Service Attack (DDoS) ',
+            'DDPHE' : 'Denver Department of Public Health & Environment',
+            'DDR' : 'Double Data Rate',
+            'DEB' : 'Denver Employee Bulletin',
+            'DECC' : 'Denver Employees Charitable Campaign',
+            'DED' : 'Denver Election Division',
+            'DEDO' : 'Denver Economic Development & Opportunity',
+            'DEH' : 'Denver Environmental Health',
+            'DEN' : 'New name for denver international airport',
+            'DERP' : 'Denver Employee Retirement Plan',
+            'DEVO' : 'Denver Employees Volunteer Opportunities',
+            'DFD' : 'Denver Fire Department',
+            'DHCP' : 'Dynamic Host Configuration Protocol',
+            'DHH' : 'Denver Health and Hospitals',
+            'DHMC' : 'Denver Health Medical Center',
+            'DHS' : 'Denver Human Services',
+            'DHS' : 'Deprtment of Human Services',
+            'DIA' : 'Denver International Airport',
+            'DIMM' : 'Dual In-line Memory Module',
+            'DIMS' : 'Digital Imaging Management System',
+            'DL' : 'Distribution List',
+            'DMMS' : 'Denver Marketing & Media Services',
+            'DMV' : 'Department of Motor Vehicles',
+            'DMZ' : 'Demilitarized Zone',
+            'DNA' : 'DeoxyriboNucleic Acid',
+            'DNN' : 'DotNetNuke',
+            'DNS' : 'Domain Name System',
+            'DNVR' : 'DeNVeR',
+            'DOA' : 'Dead On Arrival',
+            'DOF' : 'Department Of Finance',
+            'DOLE' : 'Department of Labor & Employment',
+            'DOMPD' : 'Denver Office of the Municipal Public Defender',
+            'DOSP' : 'Denver Office of Strategic Partnership',
+            'DOT' : 'Department of Transportation',
+            'DOTI' : 'Department of Transportation and Infrastructure',
+            'DP' : 'Display Port',
+            'DPAC' : 'Denver Performing Arts Complex',
+            'DPD' : 'Denver Police Department',
+            'DPHE' : 'Department of Public Health & Environment',
+            'DPL' : 'Denver Public Library',
+            'DPR' : 'Denver Parks & Recreation',
+            'DPS' : 'Denver Public Schools',
+            'DR' : 'Disaster Recovery',
+            'DRCOG' : 'Denver Regional Council Of Governments',
+            'DRMC' : 'Denver Revised Municipal Code',
+            'DRP' : 'Disaster Recovery Plan',
+            'DRP' : 'Disaster Recovery Plan',
+            'DSD' : 'Denver Sheriff Department',
+            'DSF' : 'Denver Scholarship Fund',
+            'DTU' : 'Data and Technology Unit',
+            'DVD' : 'Digital Video Disc ',
+            'DVI' : 'Digital Visual Interface',
+            'DWD' : 'Division of Workforce Development',
+            'E&L' : 'Excise and License',
+            'EAC' : 'Employee Advisory Council | Exchange Admin Center',
+            'EAM' : 'Enterprise Asset Management system',
+            'EAMS' : 'Enterprise Asset Management System',
+            'EAP' : 'Employee Assistance Program',
+            'EBT' : 'Electronic Benefits Transfer',
+            'ECAB' : 'Emergency Change Advisory Board',
+            'ECS' : 'Enterprise Cashiering System | Elastic Cloud Storage',
+            'EDI' : 'Equity Diversity and Inclusion',
+            'EEB' : 'Electronic Engineering Bureau',
+            'EEB' : 'Electronics Engineering Bureau',
+            'EEOE' : 'Equal Employment Opportunity Employer',
+            'EFT' : 'Enterprise File Transfer',
+            'EID' : 'Employee IDentification',
+            'EITS' : 'Early Identification & Intervention Strategy',
+            'EITSS' : 'Early Identification & Intervention Strategy System',
+            'EL' : 'Excise and License',
+            'ELP' : 'Emerging Leaders Program',
+            'ELT' : 'Executive Leadership Team',
+            'EMCF' : 'eMaster Case Filee',
+            'EMS' : 'Electronic Monitoring System | Environmental Management System',
+            'EMT' : 'Emergency Medical Technician',
+            'EOC' : 'Emergency Operations Center',
+            'EOD' : 'End Of Day',
+            'EOPR' : 'End of Probation Report',
+            'EPO' : 'Exclusive Provider Organization',
+            'ERP' : 'Enterprise resource planning',
+            'ESRI' : 'Environmental Systems Research Institute',
+            'ETIMS' : 'Electronic Ticket Information Management System',
+            'EXL' : 'EXcise and Licensing',
+            'EZLAPP' : 'EZ Links APPlication',
+            'EZLINKS' : 'EZLinks Tee Time Software for Golf',
+            'FAAD' : 'Family And Adult Development',
+            'FAMLI' : 'Family And Medical Leave Insurance',
+            'FAQ' : 'Frequently Asked Questions',
+            'FAST' : 'Family Advocacy Support Team',
+            'FBI' : 'Federal Bureau of Investigations',
+            'FCA' : 'Family Care Act',
+            'FCD' : 'Federal Continuity Directive',
+            'FCR' : 'First Call Resolution',
+            'FIPPS' : 'Fair Information Practice Principles',
+            'FIPS' : 'Federal Information Processing Standards',
+            'FLR' : 'First Level Response',
+            'FM' : 'Financial Management',
+            'FMLA' : 'Family and Medical Leave Act',
+            'FPGA' : 'Field-Programmable Gate Array',
+            'FSAM' : 'Federation Service of Access Management',
+            'FSH' : 'File SHare',
+            'FTE' : 'Full Time Employee',
+            'FTP' : 'File Transfer Protocol',
+            'GAL' : 'Global Address List',
+            'GARE' : 'Government Alliance on Race and Equity',
+            'GB' : 'GigaByte',
+            'GC' : 'Global Catalog',
+            'GGCC' : 'General Government Computer Center',
+            'GIF' : 'Graphics Interchange Format',
+            'GIS' : 'Geographic Information System',
+            'GL' : 'General Ledger',
+            'GOV' : 'Government',
+            'GP' : 'Group Policy',
+            'GPO' : 'Group Policy Object',
+            'GPS' : 'Global Positioning System',
+            'GRC' : 'Governance Risk & Compliance',
+            'GRITS' : 'Governance Review In Technology Services',
+            'GRIT' : 'Governance Review Information Technology',
+            'GRP' : 'GRouP',
+            'GS' : 'General Services',
+            'GUI' : 'Graphical User Interface',
+            'HA' : 'High Availability',
+            'HALO' : 'High Activity Location Observation',
+            'HCM' : 'Human Capital Management',
+            'HDD' : 'Hard Disk Drive',
+            'HDHP' : 'High-Deductible Health Plan',
+            'HDMI' : 'High-Definition Multimedia Interface',
+            'HDSDI' : 'High Definition Serial Digital Interface',
+            'HEIC' : 'High EffIciency video Coding',
+            'HIPAA' : 'Health Insurance Portability and Accountability Act',
+            'HLA' : 'High-Leval Analysis',
+            'HMO' : 'Health Maintenance Organization',
+            'HOST' : 'HOusing STability',
+            'HR' : 'Human Resources',
+            'HRBP' : 'Human Resources Business Partner',
+            'HRCP' : 'Human Rights Community Partnership',
+            'HSA' : 'Health Savings Account',
+            'HTML' : 'HyperText Markup Language',
+            'HTTP' : 'HyperText Transfer Protocol',
+            'HTTPS' : 'HyperText Transfer Protocol Secure',
+            'HUD' : 'Housing and Urban Development',
+            'HVAC' : 'Heating Ventilation and Air Conditioning',
+            'HYPE' : 'Helping Youth Pursue Excellence',
+            'IBM' : 'International Business Machines',
+            'IBT' : 'Internal Billing Transfer',
+            'IDE' : 'Integrated Development Environment',
+            'IDM' : 'IDentity Management',
+            'IDM' : 'Identity Management',
+            'IDP' : 'Individual Development Plan',
+            'IE' : 'Internet Explorer',
+            'IF' : 'Intake Filter',
+            'IFUND' : 'Innovation Fund',
+            'IGC' : 'Information Governance Committee',
+            'III' : 'Interstate Identification Index',
+            'ILT' : 'Instructor Lead Training',
+            'IM' : 'Incident Management',
+            'IM' : 'Incident Manager',
+            'IMO' : 'In My Opinion',
+            'IMU' : 'Information Management Unit',
+            'INC' : 'INCident',
+            'INF' : 'INFrastructure',
+            'IOS' : 'internetwork operating system | iphone operating system',
+            'IOT' : 'Internet Of Things',
+            'IP' : 'Internet Protocol',
+            'IPAM' : 'IP Address Management',
+            'IPS' : 'Integrated Parking Solutions',
+            'IS' : 'Information System',
+            'ISA' : 'Interconnection Security Agreement',
+            'ISCP' : 'Information Systems Contingency Plan',
+            'ISE' : 'Integrated Scripting Environment',
+            'ISO' : 'Information Security Officer',
+            'ISP' : 'Internet Service Provider',
+            'IT' : 'Information Technology',
+            'ITAM' : 'Information Technology Asset Management',
+            'ITIL' : 'Information Technology Infrastructure Library',
+            'ITSM' : 'Information Technology Service Management',
+            'JCDF' : 'Justice Center Detention Facility',
+            'JK' : 'JoKing',
+            'JMS' : 'Jail Management System',
+            'JPEG' : 'Joint Photographic Experts Group',
+            'JPG' : 'Joint Photographic Experts Group',
+            'JS' : 'JavaScript',
+            'KB' : 'Knowledge Base | KiloByte',
+            'KTM' : 'Kofax Transformation Modules',
+            'L&D' : 'Learning and Development',
+            'LD' : 'Learning and Development',
+            'LAN' : 'Local Area Network',
+            'LAPS' : 'Local Administrator Password Solution',
+            'LASO' : 'Local Agency Security Officer',
+            'LEAP' : 'Low-income Energy Assistance Program',
+            'LED' : 'Light-Emitting Diode',
+            'LEEP' : 'Law Enforcement Enterprise Portal',
+            'LFC' : 'Lindsey-Flanigan Courthouse',
+            'LIS' : 'Legislative Information System',
+            'LMS' : 'Learning Management System',
+            'LOE' : 'Level Of Effort',
+            'LOL' : 'Laugh Out Loud',
+            'LVM' : 'Locate, View, Map',
+            'MAC' : 'Media Access Control',
+            'MAO' : 'Maximum Allowable Outage',
+            'MARC' : 'Metro Area Radio Consortium',
+            'MB' : 'MegaByte | MotherBoard',
+            'MBPS' : 'Megabits per Second',
+            'MCT' : 'Mobile Computer Terminal',
+            'MDF' : 'Mobile Device Form',
+            'MDT' : 'Mobile Data Terminal',
+            'MEF' : 'Mission Essential Function',
+            'MFA' : 'Multiple Factor Authentication',
+            'MHFD' : 'Mile High Flood District',
+            'MHS' : 'Mental Health Services',
+            'MHUW' : 'Mile High United Way',
+            'MI' : 'Major Incident',
+            'MMC' : 'ManageMent Console',
+            'MO' : 'Mayor\'s Office',
+            'MOA' : 'Memorandum of Agreement',
+            'MoE' : 'Metro over Ethernet',
+            'MOS' : 'Manager of Safety',
+            'MOU' : 'Memorandum of Understanding',
+            'MPLS' : 'Multiprotocol Label Switching',
+            'MRE' : 'Mobile Report Entry',
+            'MRE' : 'Mobile Report Entry',
+            'MS' : 'Microsoft',
+            'MSA' : 'My Secure Advantage',
+            'MSI' : 'MicroSoft Installer',
+            'MTD' : 'Maximum Tolerable Downtime',
+            'MTTR' : 'Mean Time To Resolution',
+            'NAM' : 'Network Analysis Module',
+            'NAS' : 'Network Attached Storage',
+            'NAT' : 'Network Address Translation',
+            'NCIC' : 'National Crime Information Center',
+            'NDCCP' : 'North Denver Cornerstone Collaborative Partnership',
+            'NEFC' : 'New Employee First Call',
+            'NIBRS' : 'National Incidence Based Reporting System',
+            'NIC' : 'Network Interface Card',
+            'NIST' : 'National Institute of Standards and Technology',
+            'NMC' : 'Nasuni Management Console',
+            'NP' : 'No Problem',
+            'NPS' : 'Net Promoter Score',
+            'NSP' : 'Network Service Provider',
+            'NTFS' : 'New Technology File System',
+            'NTP' : 'Network Time Protocol',
+            'NVME' : 'NonVolatile Memory Express',
+            'OAM' : 'Oracle Access Manager',
+            'OASIS' : 'Online Appraisal and Statistical Information System',
+            'OBHS' : 'Office of Behavioral Health',
+            'OBIEE' : 'Oracle Business Intelligence Enterprise Edition',
+            'OCA' : 'Office of Childrens Affairs',
+            'OCR' : 'Office of Clerk and Recorder',
+            'OD' : 'OneDrive',
+            'ODI' : 'Oracle Data Integrator',
+            'OE' : 'Open Enrollment',
+            'OED' : 'Office of Economic Development',
+            'OEM' : 'Office of Emergency Management | Oracle Enterprise Manager',
+            'OEP' : 'Occupant Emergency Plan',
+            'OHR' : 'Office of Human Resources',
+            'OIAM' : 'Oracle Identity and Access Manager',
+            'OID' : 'Oracle Internet Directory',
+            'OIM' : 'Office of Independent Monitor | Open Information Model',
+            'OIT' : 'Office of Information Technology',
+            'OLA' : 'Operational Level Agreement',
+            'OLED' : 'Organic Light-Emitting Diode',
+            'OME' : 'Office of the Medical Examiner',
+            'OMPD' : 'Office of Municipal Public Defender',
+            'OOBE' : 'Out Of Box Experience',
+            'OOO' : 'Out of Office',
+            'OOP' : 'Object Oriented Programming',
+            'OP' : 'Over Powered',
+            'OPC' : 'Overflow Processing Center',
+            'OPD' : 'Office of the Public Defender',
+            'OPS' : 'OPerationS',
+            'ORG' : 'ORGanization',
+            'ORI' : 'Originating Agency Identifier',
+            'OS' : 'Operating System',
+            'OSE' : 'Office of Special Events',
+            'OSEI' : 'Office of Social Equity and Innovation',
+            'OSI' : 'Open Systems Interconnection model',
+            'OSN' : 'Officer Serial Number',
+            'OU' : 'Organizational Unit',
+            'OVD' : 'Oracle Virtual Directory',
+            'OWA' : 'Outlook Web Access',
+            'P&R' : 'Parks and Recreation',
+            'PAAS' : 'Platform as a Service',
+            'PAB' : 'Police Administration Building',
+            'PACE' : 'Prosecution And Code Enforcement',
+            'Pcard' : 'Procurement Card',
+            'PCB' : 'Printed Circuit Board',
+            'PCI' : 'Payment Card Industry | Peripheral Component Interconnect',
+            'PCIDSS' : 'Payment Card Industry Data Security Standard',
+            'PCIE' : 'Peripheral Component Interconnect Express',
+            'PD' : 'Police Districts',
+            'PDA' : 'Problematic Data Action',
+            'PDF' : 'Portable Document Format',
+            'PEAK' : 'PEAK Performance Academy',
+            'PEF' : 'Project Engagement Framework',
+            'PEP' : 'Performance Evaluation Program',
+            'PEPR' : 'Performance Evaluation Program Review',
+            'PERMS' : 'PERMitionS',
+            'PHP' : 'Personal Home Page',
+            'PIA' : 'Privacy Impact Assessments',
+            'PIAD' : 'Performance Improvement and Accountability Division',
+            'PII' : 'Personally Identifiable Information',
+            'PING' : 'Packet Inter-Network Groper',
+            'PIP' : 'Performance Improvement Plan | Package Installer for Python',
+            'PKI' : 'Public Key Infrastructure',
+            'PL' : 'Procedural Language',
+            'PMEF' : 'Primary Mission Essential Function',
+            'PMO' : 'Project Management Office',
+            'PNG' : 'Portable Network Graphics',
+            'PO' : 'Purchase Order | Probation Officer',
+            'POC' : 'Point of Contact',
+            'POS' : 'Point of Sale',
+            'PPAY' : 'Prompt Pay',
+            'PPM' : 'Project & Portfolio Management',
+            'PPO' : 'Preferred Provider Organization',
+            'PREM' : 'PREMises',
+            'PRF' : 'Purchase Request Form',
+            'PR' : 'Parks and Recreation',
+            'PS' : 'PowerShell',
+            'PST' : 'Personal folder file extension (.PST)',
+            'PSU' : 'Power Supply Unit',
+            'PTO' : 'Paid Time Off',
+            'PTS' : 'Pretrial Tracking System',
+            'PVP' : 'Player Vs Player',
+            'PW' : 'Public Works',
+            'PWI' : 'Person With Information',
+            'Q&A' : 'Question And Answer',
+            'QA' : 'Quality Assurance',
+            'QI' : 'Quality Improvement',
+            'RACF' : 'Resource Access Control Facility',
+            'RAID' : 'Redundant Array of Independent (or Inexpensive) Disks',
+            'RAM' : 'Random Access Memory',
+            'RBAC' : 'Role Based Access Control',
+            'RCA' : 'Root Cause Analysis',
+            'RDBMS' : 'Relational DataBase Management System',
+            'RDC' : 'Remote Desktop Connection',
+            'RDP' : 'Remote Desktop Protocol',
+            'RDSMS' : 'Relational Data Stream Management System',
+            'REPL' : 'Read Evaluate Print Loop',
+            'REPS' : 'Representative Payee System',
+            'REQ' : 'Requisition',
+            'RFA' : 'Request for Approval',
+            'RFP' : 'Request for Proposal',
+            'RISE' : 'Rebuilding for an Inclusive and Sustainable Economy',
+            'RITM' : 'Request Item',
+            'RJ' : 'Registered Jack',
+            'RLA' : 'Risk Limiting Audit',
+            'RMF' : 'Risk Management Framework',
+            'RMS' : 'Records Management System',
+            'ROFL' : 'Rolling On the Floor Laughing',
+            'ROW' : 'Right of Way',
+            'ROWE' : 'Right of Way Enforcement',
+            'ROWS' : 'Right Of Way Services',
+            'RPO' : 'Recovery Point Objective',
+            'RPP' : 'Residential Parking Permit',
+            'RSJ' : 'Race and Social Justice',
+            'RTD' : 'Regional Transportation District',
+            'RTO' : 'Recovery Time Objective',
+            'SAAS' : 'Software as a Service',
+            'SAML' : 'Security Assertion Markup Language',
+            'SAN' : 'Storage Area Network',
+            'SARA' : 'Support And Recovery Assistant',
+            'SAS' : 'Statistical Analysis System',
+            'SATA' : 'Serial Advanced Technology Attachment',
+            'SBA' : 'Small Business Administration',
+            'SCCM' : 'System Center Configuration Manager',
+            'SCORE' : 'State COnfidential REporting / REviewing',
+            'SCOT' : 'Safe City Office Tool (SCOT Application)',
+            'SCOT' : 'Safe City Office Tool',
+            'SCP' : 'Secure Copy Protocol',
+            'SD' : 'Service Desk',
+            'SDDS' : 'Secure Document Delivery System',
+            'SDE' : 'Spatial Database Engine',
+            'SDLC' : 'System Development Life Cycle',
+            'SDSDI' : 'Standard Definition Serial Digital Interface',
+            'SET' : 'Street Enforcement Team',
+            'SFTP' : 'Secure File Transfer Protocol',
+            'SFTY' : 'SaFTeY',
+            'SID' : 'Security IDentification',
+            'SLA' : 'Service-Level Agreement',
+            'SME' : 'Subject Matter Expert',
+            'SMH' : 'Shaking My Head',
+            'SMS' : 'Short Message Service',
+            'SMTP' : 'Simple Mail Transfer Protocol',
+            'SNAP' : 'Supplemental Nutrition Assistance Program',
+            'SNMP' : 'Simple Network Management Protocol',
+            'SNOW' : 'Service NOW',
+            'SNR' : 'Single Number Reach',
+            'SOA' : 'Service Oriented Architecture',
+            'SOAP' : 'Simple Object Access Protocol',
+            'SOC' : 'Security Operations Center',
+            'SODIMM' : 'Small Outline Dual In-line Memory Module',
+            'SOP' : 'Scope of Work | Standard Operating Procedure',
+            'SP' : 'Special Publication',
+            'SPSS' : 'Statistical Package for the Social Sciences',
+            'SQL' : 'Structured Query Language',
+            'SRA' : 'Strategic Resource Realignment',
+            'SRAE' : 'Sustainability & Resiliency Architectural Engineering',
+            'SRF' : 'Special Revenue Fund',
+            'SSD' : 'Solid State Drive',
+            'SSH' : 'Secure SHell',
+            'SSHD' : 'Solid State Hybrid Drive',
+            'SSN' : 'Social Security Number',
+            'SSO' : 'Single Sign-On',
+            'SSPR' : 'Self Server Password Reset',
+            'SSRS' : 'SQL Server Reporting Services',
+            'ST&E' : 'Security Test and Evaluation',
+            'STARS' : 'Service, Teamwork, Accountability, Respect, Safety',
+            'STE' : 'Security Test and Evaluation',
+            'SVR' : 'SerVeR',
+            'SWM' : 'Solid Waste Management',
+            'SWM' : 'Solid Waste Management',
+            'SYS' : 'SYStem',
+            'TA' : 'Talent Acquisition',
+            'TAC' : 'Technology Advisory Council',
+            'TAC' : 'Time and Attendance Change',
+            'TANF' : 'Temporary Assistance for Needy Families',
+            'TB' : 'TeraByte',
+            'TBH' : 'To Be Honest',
+            'TCM' : 'TylerCM',
+            'TCP' : 'Transmission Control Protocol',
+            'TCS' : 'Tax Collection System',
+            'TFS' : 'Microsoft Release Management and Team Foundation Server',
+            'TIA' : 'TTelecommunications Industry Alliance',
+            'TLDR' : 'Too Long Didn\'t Read',
+            'TMU' : 'Technology Mangement Unit',
+            'TOTP' : 'Time-based One-Time Password',
+            'TPM' : 'Trusted Platform Module',
+            'TS' : 'Technology Services',
+            'TT&E' : 'Test, Training, and Exercise',
+            'TTE' : 'Test, Training, and Exercise',
+            'TTYL' : 'Talk To You Later',
+            'TUI' : 'Text User Interface',
+            'UASI' : 'Urban Area Security Initiative',
+            'UCCX' : 'UCCX stands for Cisco Unified Contact Center Express',
+            'UCF' : 'Unified Compliance Framework',
+            'UCR' : 'Unified Crime Reporting',
+            'UDP' : 'User Datagram Protocol',
+            'UEFI' : 'Unified Extensible Firmware Interface',
+            'UI' : 'User Interface',
+            'UKG' : 'Ultimate Kronos Group',
+            'UPS' : 'Uninterruptible Power Supply',
+            'URL' : 'Uniform resource locator',
+            'US&C' : 'Unified Summons & Complaints',
+            'USB' : 'Universal Serial Bus',
+            'USPS' : 'United State\'s Postal Service',
+            'USR' : 'USeR',
+            'USS' : 'Unassigned Self-Service',
+            'VAU' : 'Victim Assistance Unit',
+            'VGA' : 'Video Graphics Array',
+            'VIDA' : 'Voice, Interoperability, Data, and Access (VIDA)',
+            'VIF' : 'Vehicle Impound Facility',
+            'VLAN' : 'Virtual Local Area Network',
+            'VLC' : 'Video LAN Client',
+            'VM' : 'Virtual Machine',
+            'VMS' : 'Video Management Software',
+            'VOIP' : 'Voice Over IP',
+            'VP' : 'Vice President',
+            'VPN' : 'Virtual Private Network',
+            'VR' : 'Vulnerbility Response',
+            'VRF' : 'Virtual Routing and Forwarding',
+            'VRM' : 'Voltage Regulator Module',
+            'VTL' : 'Virtual Tape Library',
+            'W3C' : 'World Wide Web Consortium',
+            'WAN' : 'Wide Area Network',
+            'WC' : 'Water Conservancy',
+            'WCGW' : 'What Could Go Wrong?',
+            'WCMS' : 'Web Content Management System',
+            'WD' : 'WorkDay',
+            'WEBB' : 'Wellington E. Webb Bldg. 201 W. Colfax',
+            'WFC' : 'Kronos Workforce Central',
+            'WFH' : 'Work From Home',
+            'WIFI' : 'Wireless Fidelity',
+            'WISER' : 'Wireless Information System for Emergency Responders',
+            'WMB' : 'Webb Municipal Building',
+            'WMD' : 'Wastewater Management Division',
+            'WMS' : 'Work Management System',
+            'WW' : 'Waste Water',
+            'WWM' : 'Waste Water Management',
+            'WWW' : 'World Wide Web',
+            'XO' : 'Executive Order',
+            'ZNIS' : 'Zoning Neighborhood Inspection Services'
         }
+
+        if (acr_obj[text]) {
+            here.textContent = acr_obj[text];
+        } else {
+            here.textContent = 'Not in database, Let me know about it!';
+        }
+        
     }
