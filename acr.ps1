@@ -35,6 +35,7 @@ switch ($acr) {
     "ATIMS"{ " Activities Tracking Information Management System" }
     "AUA" { " Acceptable Use Agreement" }
     "AV"  { " Audio Visual | Arts & Venues" }
+    "AWS" { " Amazon Web Services" }
     "BAS" { " Building Automation System" }
     "BBM" { " Buffalo Bill Museum" }
     "BCP" { " Business Continuity Plan" }
@@ -108,6 +109,7 @@ switch ($acr) {
     "CRM" { " Customer Relationship Management" }
     "CRP" { " Community Reentry Project" }
     "CRT" { " Civilian Report Technician | Review Tracking" }
+    "CRUD"{ " Create Read Update Delete" }
     "CS" { " Career Service" }
     "CSB" { " Career Services Board" }
     "CSC" { " Civil Service Commission" }
@@ -121,21 +123,21 @@ switch ($acr) {
     "DAM" { " Denver Art Museum" }
     "DAP" { " Denver Animal Protection" }
     "DAS" { " Denver Animal Shelter" }
-    "DB" { " DataBase" }
+    "DB"  { " DataBase" }
     "DBA" { " DataBase Analyst" }
-    "DC" { " Domain controller" }
+    "DC"  { " Domain controller" }
     "DCC" { " Denver County Court | Denver City Council" }
     "DCH" { " Denver Children\'s Home" }
     "DCO" { " Data Center Operations" }
     "DDC" { " Denver Detention Center" }
-    "DDOS" { " Distributed Denial of Service Attack (DDoS) " }
-    "DDPHE" { " Denver Department of Public Health & Environment" }
+    "DDOS"{ " Distributed Denial of Service Attack (DDoS) " }
+    "DDPHE"{ " Denver Department of Public Health & Environment" }
     "DDR" { " Double Data Rate" }
     "DEB" { " Denver Employee Bulletin" }
-    "DECC" { " Denver Employees Charitable Campaign" }
+    "DECC"{ " Denver Employees Charitable Campaign" }
     "DED" { " Denver Election Division" }
-    "DEDO" { " Denver Economic Development & Opportunity" }
-    "DEH" { " Denver Environmental Health" }
+    "DEDO"{ " Denver Economic Development & Opportunity" }
+    "DEH" { " Department of Environmental Health" }
     "DEN" { " New name for denver international airport" }
     "DERP" { " Denver Employee Retirement Plan" }
     "DEVO" { " Denver Employees Volunteer Opportunities" }
@@ -235,7 +237,8 @@ switch ($acr) {
     "GARE"{ " Government Alliance on Race and Equity" }
     "GB"  { " GigaByte" }
     "GC"  { " Global Catalog" }
-    "GGCC"{ " General Government Computer Center" }
+    "GCC" { " Global Catalog" }
+    "GGCC"{ " Government Community Cloud" }
     "GIF" { " Graphics Interchange Format" }
     "GIS" { " Geographic Information System" }
     "GL"  { " General Ledger" }
@@ -456,6 +459,7 @@ switch ($acr) {
     "Q&A" { " Question And Answer" }
     "QA"  { " Quality Assurance" }
     "QI"  { " Quality Improvement" }
+    "QR"  { " Quick Response" }
     "RACF"{ " Resource Access Control Facility" }
     "RAID"{ " Redundant Array of Independent (or Inexpensive) Disks" }
     "RAM" { " Random Access Memory" }
