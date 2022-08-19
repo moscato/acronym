@@ -616,6 +616,7 @@ switch ($acr) {
 
     "exit"{ " BYE!"
              start-sleep 1
+             cls
              exit
            }
 
