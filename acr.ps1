@@ -1,11 +1,14 @@
 
 Write-Host " "
-Write-Host " Welcome to CMD Acronym tool!" -ForegroundColor Yellow
+Write-Host " --------------------------------" -ForegroundColor Yellow
+Write-Host " | Welcome to CMD Acronym tool! |" -ForegroundColor Yellow
+Write-Host " --------------------------------" -ForegroundColor Yellow
+Write-Host " "
+Write-Host " 'exit' to exit"
 
 for (;;) {
 
 Write-Host " "
-Write-Host " 'exit' to exit"
 $acr = Read-Host " What Acronym would you like to expand? "
 
 Write-Host " "
@@ -13,7 +16,7 @@ Write-Host " "
 switch ($acr) {
 
  "2FA" { " Two Factor Authentication" }
- "10G" { " 10 Galapago Street\n\n This is a former data center.\n Currently houses a few network switches and a defunct mainframe." }
+ "10G" { " 10 Galapago street" }
  "A&V" { " Arts & Venues" }
  "AA" { " Accela Automation" }
  "AAD" { " Azure Active Directory" }
@@ -1120,7 +1123,8 @@ switch ($acr) {
  "ZMA" { " Zone Multicast Address" }
  "ZNIS" { " Zoning Neighborhood Inspection Services" }
 
-    "exit"{ " BYE!"
+    "exit"{ 
+             Write-Host " BYE!" -ForegroundColor Yellow
              start-sleep 1
              Clear-Host
              exit
